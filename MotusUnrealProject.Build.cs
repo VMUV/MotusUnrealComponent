@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 using System.IO; // ToDo: Replace with standard mechenism
 
-public class MotusUnreal : ModuleRules
+public class MotusUnrealProject : ModuleRules
 {
     private string ModulePath
     {
@@ -18,7 +18,7 @@ public class MotusUnreal : ModuleRules
     //        get { return Path.GetFullPath(Path.Combine(ModulePath, "Plugins/Motus1Plugin/")); }
     //    }
 
-    public MotusUnreal(ReadOnlyTargetRules Target) : base(Target)
+    public MotusUnrealProject(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -35,7 +35,7 @@ public class MotusUnreal : ModuleRules
         //            string ModulePath = Path.GetDirectoryName(RulesCompiler.GetModuleFilename(this.GetType().Name));
         string ModulePath = ModuleDirectory;
         // This will give you a relative path to ../PseudoController/ThirdParty/"LibraryDirName"/
-        string MyLibraryPath = Path.Combine(ModulePath, "MotusComponent", "Libraries");
+        string MyLibraryPath = Path.Combine(ModulePath, "MotusUnrealComponent", "Libraries");
         //    string MyThirdPartyPath = Path.Combine(ModulePath, "ThirdParty");
 
         // Use this to keep Win32/Win64/e.t.c. library files in seprate subdirectories
