@@ -6,14 +6,14 @@
 //#include "Core.h"
 #include "Engine.h"
 #include "Components/ActorComponent.h"
-#include "MotusComponent/MotusInput.h"
-#include "MotusComponent/RotationTracker.h"
-#include "MotusComponent/AutoOrienter.h"
+#include "MotusUnrealComponent/MotusInput.h"
+#include "MotusUnrealComponent/RotationTracker.h"
+#include "MotusUnrealComponent/AutoOrienter.h"
 #include "MotusUnrealComponent.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class MOTUSUNREAL_API UMotusUnrealComponent : public UActorComponent
+class MOTUSUNREALPROJECT_API UMotusUnrealComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
